@@ -1,5 +1,5 @@
 image:
-  tag: 9d59078ac3698f901dfba69d966490458bad057d
+  tag: 1394ef7800452c3404393ddf7ea80a25d88cdbf1
   pullPolicy: Always
 service:
   name: "vets-service"
