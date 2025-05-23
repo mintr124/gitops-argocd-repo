@@ -2,5 +2,6 @@ image:
   tag: c76b3e5ee1c8d50a3d76bc5417d452ec9cd90246
   pullPolicy: Always
 service:
+  name: "config-server"
   type: NodePort
   port: 8888
