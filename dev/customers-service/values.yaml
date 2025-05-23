@@ -1,5 +1,5 @@
 image:
-  tag: main
+  tag: a4282d31d7b4dea1997612f61182b91dd52ad732
   pullPolicy: Always
 service:
   name: "customers-service"
