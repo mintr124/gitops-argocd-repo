@@ -1,5 +1,5 @@
 image:
-  tag: main
+  tag: d5bd3195edf3b2ab962f63db65b61b201cc7e61a
   pullPolicy: Always
 service:
   name: "genai-service"
