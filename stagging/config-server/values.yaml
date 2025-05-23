@@ -1,0 +1,9 @@
+image:
+  tag: main
+  pullPolicy: Always
+
+service:
+
+  name: "config-server"
+  type: NodePort
+  port: 8888
