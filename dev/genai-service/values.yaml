@@ -2,5 +2,6 @@ image:
   tag: main
   pullPolicy: Always
 service:
+  name: "genai-service"
   type: NodePort
   port: 80
