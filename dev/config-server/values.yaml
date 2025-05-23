@@ -1,5 +1,5 @@
 image:
-  tag: main
+  tag: c76b3e5ee1c8d50a3d76bc5417d452ec9cd90246
   pullPolicy: Always
 service:
   type: NodePort
