@@ -1,6 +1,5 @@
 image:
   tag: v3.5.1
-  tag: main
   pullPolicy: Always
 service:
   name: "discovery-server"
