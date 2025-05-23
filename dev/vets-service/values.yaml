@@ -2,5 +2,6 @@ image:
   tag: 9d59078ac3698f901dfba69d966490458bad057d
   pullPolicy: Always
 service:
+  name: "vets-service"
   type: NodePort
   port: 80
