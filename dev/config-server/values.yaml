@@ -1,5 +1,5 @@
 image:
-  tag: dad5f19f2c332d9c8a048a1327b4e761a4d26153
+  tag: af4adc29a83049bf845b28066e434a54b4a368f6
   pullPolicy: Always
 service:
   name: "config-server"
