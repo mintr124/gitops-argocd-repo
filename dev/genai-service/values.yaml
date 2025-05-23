@@ -1,0 +1,6 @@
+image:
+  tag: main
+  pullPolicy: Always
+service:
+  type: NodePort
+  port: 80
