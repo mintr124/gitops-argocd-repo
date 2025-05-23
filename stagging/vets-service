@@ -1,6 +1,0 @@
-image:
-  tag: main
-  pullPolicy: Always
-
-service:
-  type: NodePort
