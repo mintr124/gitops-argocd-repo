@@ -1,5 +1,5 @@
 image:
-  tag: main
+  tag: 6f572b6d5e662541fd71fa35def64b1d96a21538
   pullPolicy: Always
 service:
   name: "api-gateway"
