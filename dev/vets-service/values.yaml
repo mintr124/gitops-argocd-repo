@@ -1,4 +1,5 @@
 image:
+  repository: mintr124/vets-service
   tag: 1394ef7800452c3404393ddf7ea80a25d88cdbf1
   pullPolicy: Always
 service:
