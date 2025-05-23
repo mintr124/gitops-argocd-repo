@@ -1,5 +1,5 @@
 image:
-  tag: 90cf15bbe49a8f81144118e7201ac900f1fd83cb
+  tag: 5251f2869b4c279a6a1bf121f3a03d70a961f2ae
   pullPolicy: Always
 service:
   name: "discovery-server"
