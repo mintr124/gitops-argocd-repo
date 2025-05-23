@@ -1,5 +1,5 @@
 image:
-  tag: main
+  tag: cfd990c285312bf281a1c04d6b150b3d81b16c97
   pullPolicy: Always
 service:
   name: "visits-service"
