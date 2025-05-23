@@ -1,0 +1,7 @@
+image:
+  tag: main
+  pullPolicy: Always
+service:
+  name: "visits-service"
+  type: NodePort
+  port: 80
