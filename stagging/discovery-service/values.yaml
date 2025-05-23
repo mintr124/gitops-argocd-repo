@@ -1,7 +1,0 @@
-image:
-  tag: main
-  pullPolicy: Always
-service:
-  name: "discovery-server"
-  type: NodePort
-  port: 8761
