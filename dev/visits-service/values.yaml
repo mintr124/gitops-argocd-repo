@@ -1,7 +1,19 @@
+replicaCount: 1
+
 image:
-  tag: cfd990c285312bf281a1c04d6b150b3d81b16c97
-  pullPolicy: Always
+  repository: mintr124/visits-service   # thay tên repo cho từng service
+  tag: "main"
+  pullPolicy: IfNotPresent
+
 service:
   name: "visits-service"
   type: NodePort
   port: 80
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
