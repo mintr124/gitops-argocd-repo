@@ -1,19 +1,13 @@
 replicaCount: 1
-
 image:
-  repository: mintr124/visits-service   # thay tên repo cho từng service
-  tag: "main"
+  repository: mintr124/visits-service # thay tên repo cho từng service
+  tag: "c16d0c6a38adc9cb17b9d6c22c7bc007b421c01c"
   pullPolicy: IfNotPresent
-
 service:
   name: "visits-service"
   type: NodePort
   port: 80
-
 resources: {}
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
