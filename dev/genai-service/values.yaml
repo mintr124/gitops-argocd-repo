@@ -1,19 +1,13 @@
 replicaCount: 1
-
 image:
-  repository: mintr124/genai-service   # thay tên repo cho từng service
-  tag: "main"
+  repository: mintr124/genai-service # thay tên repo cho từng service
+  tag: "cd6b80905945a5c4a6b9a002a7610e5cba5f781b"
   pullPolicy: IfNotPresent
-
 service:
   name: "genai-service"
   type: NodePort
   port: 80
-
 resources: {}
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
