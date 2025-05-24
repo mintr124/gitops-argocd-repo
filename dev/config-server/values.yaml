@@ -1,7 +1,19 @@
+replicaCount: 1
+
 image:
-  tag: f28e82ccd042a0eeff618901b8888b6c44bf5cc9
+  repository: mintr124/config-server   # thay tên repo cho từng service
+  tag: "main"
   pullPolicy: Always
+
 service:
   name: "config-server"
   type: NodePort
   port: 8888
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
