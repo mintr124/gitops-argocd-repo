@@ -1,19 +1,13 @@
 replicaCount: 1
-
 image:
-  repository: mintr124/customers-service   # thay tên repo cho từng service
-  tag: "main"
+  repository: mintr124/customers-service # thay tên repo cho từng service
+  tag: "33df12e22309775397e8d6ba5dd79d7c9446ee32"
   pullPolicy: IfNotPresent
-
 service:
   name: "customers-service"
   type: NodePort
   port: 80
-
 resources: {}
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
