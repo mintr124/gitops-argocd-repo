@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "vets-service.name" . }}
+  labels:
+    app: {{ include "vets-service.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "vets-service.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "vets-service.name" . }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "docker,mysql"
+            - name: SPRING_APPLICATION_NAME
+              value: {{ .Values.service.name | quote }}
+            - name: EUREKA_CLIENT_HEALTHCHECK_ENABLED
+              value: "true"
+            - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+              value: "http://discovery-server:8761/eureka/"
+            - name: EUREKA_INSTANCE_PREFER-IP-ADDRESS
+              value: "false"
+            - name: EUREKA_INSTANCE_METADATA-MAP_INSTANCE-ID
+              value: "${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}"
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
