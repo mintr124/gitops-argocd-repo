@@ -1,19 +1,13 @@
 replicaCount: 1
-
 image:
-  repository: mintr124/config-server   
-  tag: "main"
+  repository: mintr124/config-server
+  tag: "bdd9ce565d34a332484194da7150dcb021afd680"
   pullPolicy: Always
-
 service:
   name: "config-server"
   type: NodePort
   port: 8888
-
 resources: {}
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
