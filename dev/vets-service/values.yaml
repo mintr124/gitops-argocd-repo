@@ -1,19 +1,13 @@
 replicaCount: 1
-
 image:
-  repository: mintr124/vets-service   
-  tag: "main"
+  repository: mintr124/vets-service
+  tag: "464b965d4f786bcc0e8b186ba92d569f61070c4f"
   pullPolicy: Always
-
 service:
   name: "vets-service"
   type: NodePort
   port: 80
-
 resources: {}
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
