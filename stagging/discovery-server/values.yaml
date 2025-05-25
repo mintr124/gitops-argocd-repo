@@ -1,7 +1,20 @@
+replicaCount: 1
+
 image:
-  tag: v3.5.1
-  pullPolicy: Always
+  repository: mintr124/discovery-server
+  tag: "main"
+  pullPolicy: IfNotPresent
+
 service:
-  name: "discovery-server"
-  type: NodePort
-  port: 8761
+  name: "discovery-server"
+  type: NodePort
+  port: 8761
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
