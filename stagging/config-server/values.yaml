@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mintr124/config-server
-  tag: "v3.5.2"
+  tag: "v3.5.3"
   pullPolicy: IfNotPresent
 service:
   name: "config-server"
