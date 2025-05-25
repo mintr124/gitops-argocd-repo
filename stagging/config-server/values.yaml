@@ -1,7 +1,19 @@
+replicaCount: 1
+
 image:
-  tag: v3.5.1
-  pullPolicy: Always
+  repository: mintr124/config-server   
+  tag: "main"
+  pullPolicy: IfNotPresent
+
 service:
-  name: "config-server"
-  type: NodePort
-  port: 8888
+  name: "config-server"
+  type: NodePort
+  port: 8888
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
