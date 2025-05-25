@@ -1,7 +1,19 @@
+replicaCount: 1
+
 image:
-  tag: v3.5.1
-  pullPolicy: Always
+  repository: mintr124/customers-service   
+  tag: "main"
+  pullPolicy: IfNotPresent
+
 service:
   name: "customers-service"
   type: NodePort
   port: 80
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
