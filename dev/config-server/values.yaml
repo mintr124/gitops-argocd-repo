@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mintr124/config-server
-  tag: "bdd9ce565d34a332484194da7150dcb021afd680"
+  tag: "bb3d743a8fbeead9e46f5b7bb8db8774c52d0f3b"
   pullPolicy: Always
 service:
   name: "config-server"
