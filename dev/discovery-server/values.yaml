@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mintr124/discovery-server
-  tag: "ab0f3e3d723c0055eee53ac02598f84d841820af"
+  tag: "6455f6b94bd6b293a01a63d76ebf44dc9e47cb28"
   pullPolicy: IfNotPresent
 service:
   name: "discovery-server"
