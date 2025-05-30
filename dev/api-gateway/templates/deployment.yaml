@@ -22,7 +22,7 @@ spec:
             - containerPort: 8080
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: "docker,mysql"
+              value: "native"
             - name: SPRING_ZIPKIN_BASE_URL
               value: "http://zipkin:9411"
             - name: SPRING_SLEUTH_SAMPLER_PROBABILITY
