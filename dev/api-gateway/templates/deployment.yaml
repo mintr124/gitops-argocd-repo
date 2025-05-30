@@ -23,6 +23,10 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "docker,mysql"
+            - name: SPRING_ZIPKIN_BASE_URL
+              value: "http://zipkin:9411"
+            - name: SPRING_SLEUTH_SAMPLER_PROBABILITY
+              value: "1.0"
             # Bạn có thể thêm biến khác ở đây nếu cần
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
