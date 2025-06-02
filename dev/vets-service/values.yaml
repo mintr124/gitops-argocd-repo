@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mintr124/vets-service
-  tag: "862fa783d949b34e237b2095047fd0d561b08a30"
+  tag: "5c407b5df5f5cbeaa161e613faa90881c9c92740"
   pullPolicy: Always
 service:
   name: "vets-service"
