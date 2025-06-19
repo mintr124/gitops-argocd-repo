@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: mintr124/api-gateway
-  tag: "0d40386176eb8e339fb3d28c8e3d3f4c39f7b33c"
+  tag: "36c7ea3430c7d21af83827a8abbf7a101891149d"
   pullPolicy: IfNotPresent
 service:
   name: "api-gateway"
